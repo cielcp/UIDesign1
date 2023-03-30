@@ -6,9 +6,18 @@
 
 /* adjusting fonts */
 
+.cursive {
+    font-family: cursive;
+}
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+}
+
+body {
+    color: rgb(28, 122, 87);
+    Font-family: helvetica;
 }
 
 p, li {
@@ -24,6 +33,10 @@ p, li {
 
 h1, p {
 	margin-bottom:  20px;
+}
+
+h3 {
+	margin-top:  20px;
 }
 
 ul, ol {
