@@ -6,6 +6,12 @@
 
 /* adjusting fonts */
 
+@font-face {
+	font-family: "FT88";
+	src: url("the-path-to-your-font") format("font-format"),
+		 url("the-path-to-your-font") format("font-format");
+  }
+
 .cursive {
     font-family: cursive;
 }

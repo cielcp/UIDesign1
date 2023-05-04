@@ -8,7 +8,6 @@ body {
 	justify-content: center;	
 	height: 90vh;
 	padding-top: 5vh;
-
 }
 
 #stage {
@@ -19,6 +18,14 @@ body {
 	position: absolute;
 }
 
+#pic {
+	width: 100px;
+	height: 10px;
+	background: white;
+	position: absolute;
+	top: 15px;
+	left: 15px;	
+}
 
 /* BASIC */
 
@@ -69,7 +76,6 @@ body {
 
 	/* uncomment to add keyframe animation */
 	/* animation: spin 2s infinite; */
-
 }
 #bookCover {
 	width: 80px;
@@ -80,10 +86,6 @@ body {
 	left: 319px;
 	position: absolute;
 	transform: rotate(-12deg);
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
 }
 #bookFront {
 	width: 100px;
@@ -92,10 +94,6 @@ body {
 	top: 380px;
 	left: 280px;
 	position: absolute;
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
 }
 
 #book2 {
@@ -105,10 +103,6 @@ body {
 	top: 355px;
 	left: 20px;
 	position: absolute;
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
 }
 #book2Cover {
 	width: 80px;
@@ -119,10 +113,6 @@ body {
 	left: 313px;
 	position: absolute;
 	transform: rotate(-12deg);
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
 }
 #book2Front {
 	width: 450px;
@@ -132,10 +122,6 @@ body {
 	top: 331px;
 	left: 20px;
 	position: absolute;
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
 }
 
 
@@ -208,7 +194,6 @@ body {
 	top: 330px;
 	left: 300px;
 	position: absolute;
-
 }
 
 
