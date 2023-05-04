@@ -1,0 +1,670 @@
+body {
+	background: #cad8c5;
+}
+
+#align {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	height: 90vh;
+	padding-top: 5vh;
+
+}
+
+#stage {
+	width: 750px;
+	height: 570px;
+	margin: auto;
+	background: white;
+	position: absolute;
+}
+
+
+/* BASIC */
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+}
+
+#square {
+	width: 150px;
+	height: 150px;
+	background: red;
+	top: 203px;
+	left: 270px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+#book {
+	width: 300px;
+	height: 90px;
+	background: rgb(237, 228, 216);
+	top: 400px;
+	left: 30px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+#bookCover {
+	width: 80px;
+	height: 88px;
+	background: rgb(112, 155, 48);
+	clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+	top: 394px;
+	left: 319px;
+	position: absolute;
+	transform: rotate(-12deg);
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+#bookFront {
+	width: 100px;
+	height: 50px;
+	background: rgb(130, 184, 49);
+	top: 380px;
+	left: 280px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#book2 {
+	width: 300px;
+	height: 45px;
+	background: rgb(236, 234, 230);
+	top: 355px;
+	left: 20px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+#book2Cover {
+	width: 80px;
+	height: 43px;
+	background: rgb(215, 194, 56);
+	clip-path: polygon(13% 0%, 100% 0, 87% 100%, 0% 100%);
+	top: 349px;
+	left: 313px;
+	position: absolute;
+	transform: rotate(-12deg);
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+#book2Front {
+	width: 450px;
+	height: 25px;
+	background: rgb(184, 166, 53);
+	clip-path: polygon(30% 0%, 100% 0, 70% 100%, 0% 100%);
+	top: 331px;
+	left: 20px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+
+/* POT */
+
+#pot {
+	top: 265px;
+	left: 450px;
+	position: absolute;
+	width: 160px;
+	height: 180px;
+	margin: 20px 0;
+	background: rgb(218, 218, 218);
+	border-radius: 50% / 10%;
+	color: white;
+	text-align: center;
+	text-indent: .1em;
+  }
+  #pot:before {
+	content: '';
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	right: -5%;
+	left: -5%;
+	background: inherit;
+	border-radius: 5% / 50%;
+  }
+
+#potLid {
+	width: 160px;
+	height: 30px;
+	background: rgb(218, 218, 218);
+	clip-path: polygon(0 29%, 100% 29%, 90% 100%, 10% 100%);
+	top: 265px;
+	left: 450px;
+	position: absolute;
+}
+
+#potDot {
+	width: 20px;
+	height: 20px;
+	background: rgb(218, 218, 218);
+	border-radius: 150px;
+	top: 260px;
+	left: 518px;
+	position: absolute;
+}
+
+
+/* BANANA */
+
+#banana {
+	display: block;
+	width: 50px;
+	height: 180px;
+	background: rgb(241, 217, 34);
+	background-image: linear-gradient(to left, rgb(141, 126, 95), rgb(241, 217, 34), rgb(241, 217, 34));
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 235px;
+	left: 200px;
+	position: absolute;
+	transform: rotate(98deg);
+}
+
+#bananaStem {
+	width: 30px;
+	height: 15px;
+	background-image: linear-gradient(to top left, rgb(141, 126, 95), rgb(241, 217, 34), rgb(241, 217, 34));
+	top: 330px;
+	left: 300px;
+	position: absolute;
+
+}
+
+
+
+/* VASE */
+
+#vaseBody {
+	width: 150px;
+	height: 150px;
+	background: rgb(218, 218, 218);
+	border-radius: 150px;
+	top: 203px;
+	left: 200px;
+	position: absolute;
+}
+
+#vaseSpout {
+	width: 50px;
+	height: 50px;
+	background: rgb(218, 218, 218);
+	clip-path: polygon(0 29%, 100% 29%, 85% 100%, 15% 100%);
+	top: 160px;
+	left: 250px;
+	position: absolute;
+}
+
+#flower {
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	top: 20px;
+	left: 250px;
+  }
+#flower:before,
+#flower:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background: pink;
+	background-image: linear-gradient(to top left, rgb(201, 126, 138), pink, pink);
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+#flower:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+#flower2 {
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	top: 35px;
+	left: 260px;
+	transform: rotate(140deg)
+  }
+#flower2:before,
+#flower2:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background-image: linear-gradient(to bottom left, rgb(201, 126, 138), pink, pink);
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+#flower2:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+#flower3 {
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	top: 35px;
+	left: 235px;
+	transform: rotate(-125deg)
+  }
+#flower3:before,
+#flower3:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background-image: linear-gradient(to bottom left, rgb(201, 126, 138), pink, pink);
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+#flower3:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+#leaf {
+	width: 100px;
+	height: 100px;
+	border-radius: 0 70px;
+	background-image: linear-gradient(to right, #76a363, #76a363, #4e8054);
+	transform: rotate(90deg);
+	top: 45px;
+	left: 280px;
+	position: absolute;
+}
+
+#leaf2 {
+	width: 70px;
+	height: 70px;
+	border-radius: 0 70px;
+	background-image: linear-gradient(to right, #76a363, #76a363, #4e8054);
+	transform: rotate(120deg);
+	top: 120px;
+	left: 290px;
+	position: absolute;
+}
+
+#flowerWhite {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	top: 80px;
+	left: 170px;
+	transform: rotate(-30deg)
+  }
+#flowerWhite:before,
+#flowerWhite:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background-image: linear-gradient(to top left, #a1c070, rgb(239, 233, 234), rgb(239, 233, 234));
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+#flowerWhite:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+#stem {
+	width: 9px;
+	height: 90px;
+	background: #4e8054;
+	top: 90px;
+	left: 280px;
+	position: absolute;
+	transform: rotate(5deg)
+
+}
+#stem2 {
+	width: 5px;
+	height: 90px;
+	background: #76a363;
+	top: 90px;
+	left: 250px;
+	position: absolute;
+	transform: rotate(-20deg)
+
+}
+#stem4 {
+	width: 5px;
+	height: 90px;
+	background: #76a363;
+	top: 90px;
+	left: 270px;
+	position: absolute;
+}
+#stem3 {
+	width: 10px;
+	height: 90px;
+	background: #a1c070;
+	top: 100px;
+	left: 240px;
+	position: absolute;
+	transform: rotate(-25deg)
+
+}
+#stem5 {
+	width: 5px;
+	height: 150px;
+	background: #76a363;
+	top: 50px;
+	left: 205px;
+	position: absolute;
+	transform: rotate(-45deg)
+}
+
+/* ANPANMAN */
+
+#nose {
+	width: 45px;
+	height: 40px;
+	background: rgb(239, 133, 11);
+	border-radius: 150px;
+	top: 355px;
+	left: 387px;
+	position: absolute;
+}
+
+#leftCheek {
+	width: 40px;
+	height: 40px;
+	background: rgb(244, 109, 79);
+	border-radius: 150px;
+	top: 355px;
+	left: 350px;
+	position: absolute;
+}
+
+#rightCheek {
+	width: 40px;
+	height: 40px;
+	background: rgb(244, 109, 79);
+	border-radius: 150px;
+	top: 355px;
+	left: 430px;
+	position: absolute;
+}
+
+#leftFoot {
+	width: 60px;
+	height: 60px;
+	background: rgb(255, 230, 0);
+	border-radius: 150px;
+	top: 490px;
+	left: 330px;
+	position: absolute;
+}
+
+#rightFoot {
+	width: 60px;
+	height: 60px;
+	background: rgb(255, 230, 0);
+	border-radius: 150px;
+	top: 490px;
+	left: 430px;
+	position: absolute;
+}
+
+#leftEye {
+	width: 12px;
+	height: 20px;
+	background: rgb(0, 0, 0);
+	border-radius: 150px;
+	top: 340px;
+	left: 380px;
+	position: absolute;
+}
+
+#rightEye {
+	width: 25px;
+	height: 23px;
+	background: rgb(0, 0, 0);
+	border-radius: 150px;
+	top: 344px;
+	left: 418px;
+	position: absolute;
+}
+#rightHole {
+	width: 27px;
+	height: 23px;
+	background: rgb(232, 200, 177);
+	border-radius: 150px;
+	top: 347px;
+	left: 417px;
+	position: absolute;
+}
+
+#rightBrow {
+	width: 30px;
+	height: 30px;
+	background: rgb(0, 0, 0);
+	border-radius: 150px;
+	top: 325px;
+	left: 415px;
+	position: absolute;
+}
+#rightBrowHole {
+	width: 32px;
+	height: 32px;
+	background: rgb(232, 200, 177);
+	border-radius: 150px;
+	top: 327px;
+	left: 413px;
+	position: absolute;
+}
+
+#leftBrow {
+	width: 30px;
+	height: 30px;
+	background: rgb(0, 0, 0);
+	border-radius: 150px;
+	top: 325px;
+	left: 370px;
+	position: absolute;
+}
+#leftBrowHole {
+	width: 32px;
+	height: 32px;
+	background: rgb(232, 200, 177);
+	border-radius: 150px;
+	top: 327px;
+	left: 370px;
+	position: absolute;
+}
+
+#anpan {
+	width: 130px;
+	height: 125px;
+	background: rgb(232, 200, 177);
+	border-radius: 150px;
+	top: 305px;
+	left: 345px;
+	position: absolute;
+}
+
+#mouth {
+	width: 45px;
+	height: 45px;
+	background: rgb(174, 107, 107);
+	border-radius: 150px;
+	top: 365px;
+	left: 385px;
+	position: absolute;
+}
+
+#mouthHole {
+	width: 60px;
+	height: 30px;
+	background: rgb(232, 200, 177);
+	top: 367px;
+	left: 380px;
+	position: absolute;
+}
+
+#body {
+	display: block;
+	width: 126px;
+	height: 120px;
+	background: rgb(255, 0, 0);
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 400px;
+	left: 345px;
+	position: absolute;
+}
+
+#leftArm {
+	display: block;
+	width: 40px;
+	height: 80px;
+	background: rgb(255, 0, 0);
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 415px;
+	left: 330px;
+	position: absolute;
+	transform: rotate(30deg);
+}
+
+#leftHand {
+	display: block;
+	width: 40px;
+	height: 45px;
+	background: rgb(255, 230, 0);
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 450px;
+	left: 320px;
+	position: absolute;
+	transform: rotate(210deg);
+}
+
+#rightArm {
+	display: block;
+	width: 40px;
+	height: 80px;
+	background: rgb(255, 0, 0);
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 415px;
+	left: 447px;
+	position: absolute;
+	transform: rotate(-30deg);
+}
+
+#rightHand {
+	display: block;
+	width: 40px;
+	height: 45px;
+	background: rgb(255, 230, 0);
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 450px;
+	left: 458px;
+	position: absolute;
+	transform: rotate(-210deg);
+}
+
+#smile {
+	width: 22px;
+	height: 22px;
+	background: rgb(255, 230, 0);
+	border-radius: 150px;
+	top: 450px;
+	left: 398px;
+	position: absolute;
+}
+
+
+#apple {
+	width: 130px;
+	height: 120px;
+	background-image: linear-gradient(to top right, red, rgb(255, 196, 0));
+	border-radius: 150px;
+	top: 380px;
+	left: 600px;
+	position: absolute;
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/

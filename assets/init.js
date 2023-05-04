@@ -38,15 +38,14 @@ $(document).ready(function() {
 
     /* make a bug follow your cursor and resize */
 
-    // $('body').append('<div id="follow">🦟</div>');
-    // $(document).on("mousemove", function (event) {
-    //     $('#follow').css({
-    //         'font-size' : event.pageY/10+'px',
-    //         'position' : 'absolute',
-    //         'left' : event.pageX+10+'px',
-    //         'top' : event.pageY+10+'px'
-    //     });
-    // });
-
+    $('body').append('<div id="follow">🦟</div>');
+    $(document).on("mousemove", function (event) {
+        $('#follow').css({
+            'font-size' : event.pageY/10+'px',
+            'position' : 'absolute',
+            'left' : event.pageX+10+'px',
+            'top' : event.pageY+10+'px'
+        });
+    });
 
 });
