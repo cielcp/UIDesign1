@@ -1,34 +1,135 @@
 * {
-	margin:  0px;
-	padding:  0px;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
-/* adjusting fonts */
+/* adjusting fonts
 
 @font-face {
-	font-family: "FT88";
-	src: url("the-path-to-your-font") format("font-format"),
-		 url("the-path-to-your-font") format("font-format");
-  }
+  font-family: "Oracle Triple Variable Trial";
+  src: url("ABCViafont-Regular-Trial.woff2") format("woff2-variations"),
+       url("ABCViafont-Regular-Trial.woff") format("woff-variations");
+}
+
+body {
+  font-family: "Oracle Triple Variable Trial", sans-serif;
+}
+
+a, a:visited {
+  font-family: "Oracle Triple Variable Trial";
+  font-variation-settings: "wght" 200, "slnt" 0;
+  transition: font-variation-settings 0.3s ease;
+}
+
+a:hover {
+  font-variation-settings: "wght" 700, "slnt" -12;
+} */
+
+/*
+@font-face {
+	font-family: "ft88";
+	src: url("FT88-Regular.woff") format("woff-variations"),
+		url("FT88-Regular.woff2") format("woff2-variations");
+}
 
 .cursive {
-    font-family: cursive;
+	font-family: cursive;
+}
+*/
+
+@font-face {
+	font-family: "century";
+	src: url("Century Normal.ttf");
+}
+
+@font-face {
+	font-family: "songmyung";
+	src: url("SongMyung-Regular.ttf");
+}
+
+@font-face {
+	font-family: "roboto";
+	src: url("Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "wild";
+	src: url("Wild2GhixmNc-ZW9K.ttf");
+}
+
+.century {
+	font-family: "century";
+}
+
+.brush {
+	font-family: "songmyung";
+}
+
+header {
+	text-align: center;
+	padding-bottom: 20px;
+	background-image: "assets/computer.jpg";
+}
+
+#top-right {
+	text-align: right;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
+	font-family: Helvetica, sans-serif;
+	color: #353E4D;
+	background-color: #F1F4ED;
+	cursor: url('https://pixels.crd.co/assets/images/gallery58/e109993c.gif?v=9b219e01'), auto;
 }
 
-body {
-    color: rgb(28, 122, 87);
-    Font-family: helvetica;
+.darkmode {
+	color: #F1F4ED;
+	background-color: #353E4D;
 }
 
-p, li {
-	font-size:  22px;
+.hidden {
+	display: none;
+}
+
+button {
+	border-radius: 10px;
+	padding: 5px;
+}
+
+p,
+li {
+	font-size: 22px;
 	line-height: 30px;
+}
+
+h1,
+p {
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin-top: 20px;
+}
+
+ul,
+ol {
+	margin-left: 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a,
+a:visited {
+	transition: all 500ms ease;
+	color: #989DA3;
+}
+
+a:hover {
+	color: #19B4AE;
 }
 
 /* adjusting spacing */
@@ -37,22 +138,6 @@ p, li {
 	padding: 20px;
 }
 
-h1, p {
-	margin-bottom:  20px;
-}
-
-h3 {
-	margin-top:  20px;
-}
-
-ul, ol {
-	margin-left: 20px;
-}
-
-img {
-	max-width: 100%;
-	height:  auto;
-}
 
 /* uncomment the code below to set the grid */
 
@@ -69,9 +154,6 @@ body {
 	padding:  20px;
 	overflow: scroll;
 	height: 100vh;
-}
-
-#left-column {
 }
 
 #right-column {

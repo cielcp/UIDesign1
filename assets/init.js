@@ -6,7 +6,16 @@ ready for the code inside of the
 function to be executed 
 */
 
-$(document).ready(function() {
+$(document).ready(function(){
+    $("button").click(function(){
+      $("body").toggleClass("darkmode");
+      $("#moon").toggleClass("hidden");
+      $("#sun").toggleClass("hidden");
+    });
+  });
+
+/*
+$(document).ready(function() {*/
     
     /* 
     jquery follows its own syntax. it uses
@@ -18,9 +27,9 @@ $(document).ready(function() {
     inside the curly brackets.
     */
 
-    $('body').click(function(){
+    /*$('body').click(function(){
         $(this).css('background', 'yellow');
-    })
+    })*/
 
     /* random background color from an array */
 
@@ -31,14 +40,14 @@ $(document).ready(function() {
     // });
 
     /* add a character to a list */
-
-    // $('li').mouseover(function(){
-    //     $(this).append('👋');
-    // });
-
+/*
+    $('li').mouseover(function(){
+         $(this).append('👋');
+     });
+*/
     /* make a bug follow your cursor and resize */
 
-    $('body').append('<div id="follow">🦟</div>');
+    /*$('body').append('<div id="follow">🦟</div>');
     $(document).on("mousemove", function (event) {
         $('#follow').css({
             'font-size' : event.pageY/10+'px',
@@ -48,4 +57,4 @@ $(document).ready(function() {
         });
     });
 
-});
+});*/
