@@ -4,6 +4,7 @@
 <head>
   <title> Ciel Park | UI Design Programming 1</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="assets/init.js"></script>
@@ -16,47 +17,62 @@
   <div id="grid">
     <div id="left-column" class="scroll">
 
-      <figure id="top-right">
-        <button id="moon" style="background-color: #353E4D;"><img src="assets/moon.png" alt="to dark mode button"
-            width="25px"></button>
-        <button id="sun" class="hidden"><img src="assets/sun.png" alt="to light mode button" width="25px"></button>
-      </figure>
-
       <!-- header -->
       <header>
-        <h1><span class="century">CIEL PARK</span></h1>
-        <h1><span class="brush">박세은</span></h1>
-          <p>✧ hello! i am a 3rd year exchange student from washington d.c. ✧</p>
+        <div id="head-col">
+          <h4 class="century">UI DESIGN PROG <br> PORTFOLIO SITE:</h4>
+          <h1 class="century">CIEL PARK</h1>
+          <h4 class="century">2.2</h4>
+        </div>
+        <div id="head-col">
+          <h1 class="brush">박<br>세<br>은</h1>
+          <figure id="right">
+            <!--
+          <button id="moon" style="background-color: #353E4D;"><img src="assets/moon.png" alt="to dark mode button"
+              width="25px"></button>
+          <button id="sun" class="hidden"><img src="assets/sun.png" alt="to light mode button" width="25px"></button>
+          -->
+            <button id="moon"
+              style="color: #353E4D; cursor: url('https://pixels.crd.co/assets/images/gallery62/6735522f.png?v=9b219e01'), auto;">
+              <h2>✧</h2>
+            </button>
+            <button id="sun" class="hidden"
+              style="color:#F1F4ED; cursor: url('https://pixels.crd.co/assets/images/gallery40/df058d7c.gif?v=9b219e01'), auto;">
+              <h2>✧</h2>
+            </button>
+          </figure>
+        </div>
       </header>
 
       <!-- about me -->
       <section>
-      <p>i like video games, cats, and coffee</p>
-      <!-- <img src="https://i.pinimg.com/originals/0b/5a/25/0b5a25d0c8c52a98eed2cd537c1d8b82.jpg" alt="miffy" width="200"
+        <p>✧ hello! i am a 3rd year exchange student from washington d.c. i enjoy video games, cats, and coffee ✧</p>
+        <!-- <img src="https://i.pinimg.com/originals/0b/5a/25/0b5a25d0c8c52a98eed2cd537c1d8b82.jpg" alt="miffy" width="200"
         height="250" /> -->
-      <h3>favorites</h3>
-      <ul>
-        <li>my favorite food is noodles</li>
-        <li>my favorite song is fairy of shampoo</li>
-        <li>my favorite website is <a href="https://www.pinterest.com/">pinterest</a></li>
-      </ul>
+      </section>
+
+      <!-- about me -->
+      <section>
+        <h4>favorites</h4>
+        <ul>
+          <li>my favorite food is noodles</li>
+          <li>my favorite song is fairy of shampoo</li>
+          <li>my favorite website is <a href="https://www.pinterest.com/">pinterest</a></li>
+        </ul>
       </section>
 
       <!-- exercises-->
-      <h3>exercises</h3>
-      <ul>
-        <li><a href="ascii_town/exterior-cielpark.html">ascii town</a></li>
-      </ul>
-      <ul>
-        <li><a href="codingfromlife/index.html">css still life</a></li>
-      </ul>
-      <ul>
-        <li><a href="codingfromlife/index.html">project1: personal utility</a></li>
-      </ul>
-      <ul>
-        <li><a href="ciel's bag/index.html">workshop: what's in my bag</a></li>
-      </ul>
-
+      <section>
+        <h4>exercises</h4>
+        <ol>
+          <li><a href="ascii_town/exterior-cielpark.html">ascii town</a></li>
+          <li><a href="codingfromlife/index.html">css still life</a></li>
+          <li><a href="codingfromlife/index.html">project1: personal utility</a></li>
+          <li><a href="ciel's bag/index.html">workshop: what's in my bag</a></li>
+        </ol>
+      </section>
+      
+      <!--
       <footer>
         <img src="https://pixels.crd.co/assets/images/gallery09/025496ae.gif?v=e29526ca" alt="pixel1" /> <img
           src="https://pixels.crd.co/assets/images/gallery08/e092c03e.gif?v=e29526ca" alt="pixel2" /> <img
@@ -66,7 +82,7 @@
           src="https://pixels.crd.co/assets/images/gallery25/f69cf5bd.gif?v=e29526ca" alt="pixel6" /> <img
           src="https://pixels.crd.co/assets/images/gallery15/1509b4e6.gif?v=e29526ca" alt="pixel7" />
       </footer>
-
+      -->
 
     </div>
   </div>

@@ -4,39 +4,7 @@
 	box-sizing: border-box;
 }
 
-/* adjusting fonts
-
-@font-face {
-  font-family: "Oracle Triple Variable Trial";
-  src: url("ABCViafont-Regular-Trial.woff2") format("woff2-variations"),
-       url("ABCViafont-Regular-Trial.woff") format("woff-variations");
-}
-
-body {
-  font-family: "Oracle Triple Variable Trial", sans-serif;
-}
-
-a, a:visited {
-  font-family: "Oracle Triple Variable Trial";
-  font-variation-settings: "wght" 200, "slnt" 0;
-  transition: font-variation-settings 0.3s ease;
-}
-
-a:hover {
-  font-variation-settings: "wght" 700, "slnt" -12;
-} */
-
-/*
-@font-face {
-	font-family: "ft88";
-	src: url("FT88-Regular.woff") format("woff-variations"),
-		url("FT88-Regular.woff2") format("woff2-variations");
-}
-
-.cursive {
-	font-family: cursive;
-}
-*/
+/* fonts*/
 
 @font-face {
 	font-family: "century";
@@ -53,11 +21,6 @@ a:hover {
 	src: url("Roboto-Bold.ttf");
 }
 
-@font-face {
-	font-family: "wild";
-	src: url("Wild2GhixmNc-ZW9K.ttf");
-}
-
 .century {
 	font-family: "century";
 }
@@ -66,22 +29,37 @@ a:hover {
 	font-family: "songmyung";
 }
 
+/* divs */
+
 header {
-	text-align: center;
-	padding-bottom: 20px;
-	background-image: "assets/computer.jpg";
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
-#top-right {
+#head-col {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#right {
 	text-align: right;
 }
 
 body {
+	padding: 20px;
 	font-family: Helvetica, sans-serif;
 	color: #353E4D;
 	background-color: #F1F4ED;
-	cursor: url('https://pixels.crd.co/assets/images/gallery58/e109993c.gif?v=9b219e01'), auto;
+	cursor: url('https://pixels.crd.co/assets/images/gallery23/8411098b.gif?v=9b219e01'), auto;
 }
+
+section {
+	margin-bottom: 20px;
+}
+
+/* darkmode stuff*/
 
 .darkmode {
 	color: #F1F4ED;
@@ -92,10 +70,7 @@ body {
 	display: none;
 }
 
-button {
-	border-radius: 10px;
-	padding: 5px;
-}
+/* text*/
 
 p,
 li {
@@ -103,18 +78,42 @@ li {
 	line-height: 30px;
 }
 
-h1,
-p {
-	margin-bottom: 20px;
+h1 {
+	font-size: 48px;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-size: 32px;
+	padding-left: 5px;
 }
 
 h3 {
-	margin-top: 20px;
+	font-size: 30px;
+	padding-bottom: 10px
+}
+
+h4 {
+	font-size: 24px;
+	padding-bottom: 14px;
+}
+
+p, li {
+	padding-bottom: 10px;
 }
 
 ul,
 ol {
 	margin-left: 20px;
+}
+
+/* misc*/
+
+button {
+	border-radius: 10px;
+	background: none;
+	padding: 5px;
+	border: 0px;
 }
 
 img {
@@ -126,16 +125,34 @@ a,
 a:visited {
 	transition: all 500ms ease;
 	color: #989DA3;
+	cursor: url('https://pixels.crd.co/assets/images/gallery65/50418f3e.gif?v=9b219e01'), auto;
 }
 
 a:hover {
 	color: #19B4AE;
 }
 
-/* adjusting spacing */
+/* spacing */
 
 #left-column {
 	padding: 20px;
+}
+
+
+/* adaptive */
+@media only screen and (max-device-width: 812px) { 
+	body {
+        padding: 10px;
+    }
+	h1 {
+        font-size: 40px;
+    }
+	h2 {
+        font-size: 24px;
+    }
+	h4 {
+        font-size: 24px;
+    }
 }
 
 
