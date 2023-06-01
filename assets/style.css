@@ -34,6 +34,7 @@
 header {
 	display: flex;
 	justify-content: space-between;
+	padding: 10px;
 	margin-bottom: 30px;
 }
 
@@ -51,7 +52,8 @@ body {
 	padding: 20px;
 	font-family: Helvetica, sans-serif;
 	color: #353E4D;
-	background-color: #F1F4ED;
+	text-shadow: 0 0 10px #353E4D;
+	background-color: #CED3CD;
 	cursor: url('https://pixels.crd.co/assets/images/gallery23/8411098b.gif?v=9b219e01'), auto;
 }
 
@@ -63,7 +65,18 @@ section {
 
 .darkmode {
 	color: #F1F4ED;
+	text-shadow: 0 0 10px #F1F4ED;
 	background-color: #353E4D;
+}
+
+.darkmode a, 
+.darkmode a:visited {
+	color: #F1F4ED;
+	text-shadow: 0 0 10px #E6484F;
+}
+
+.darkmode a:hover {
+	color: #353E4D;
 }
 
 .hidden {
@@ -97,6 +110,11 @@ h4 {
 	font-size: 24px;
 	padding-bottom: 14px;
 }
+/*
+section h4 {
+	text-shadow: 0 0 20px #fff, 0 0 30px #e60073, 
+	0 0 40px #e60073, 0 0 50px #e60073;
+}*/
 
 p, li {
 	padding-bottom: 10px;
@@ -114,6 +132,7 @@ button {
 	background: none;
 	padding: 5px;
 	border: 0px;
+	text-shadow: 0 0 10px #F1F4ED;
 }
 
 img {
@@ -124,12 +143,14 @@ img {
 a,
 a:visited {
 	transition: all 500ms ease;
-	color: #989DA3;
+	color: #353E4D;
+	text-shadow: 0 0 10px #19B4AE;
 	cursor: url('https://pixels.crd.co/assets/images/gallery65/50418f3e.gif?v=9b219e01'), auto;
 }
 
 a:hover {
-	color: #19B4AE;
+	color: #DEE8E9;
+
 }
 
 /* spacing */
