@@ -32,6 +32,10 @@
 /* divs */
 
 header {
+	background-color: #CED3CD; 
+	/*background-image: url(bg.jpg); */
+	background-size: cover; 
+	background-blend-mode:soft-light;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
@@ -39,7 +43,7 @@ header {
 }
 
 #head-col {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -52,7 +56,7 @@ body {
 	padding: 20px;
 	font-family: Helvetica, sans-serif;
 	color: #353E4D;
-	text-shadow: 0 0 10px #353E4D;
+	/*text-shadow: 0 0 10px #353E4D;*/
 	background-color: #CED3CD;
 	cursor: url('https://pixels.crd.co/assets/images/gallery23/8411098b.gif?v=9b219e01'), auto;
 }
@@ -64,19 +68,36 @@ section {
 /* darkmode stuff*/
 
 .darkmode {
-	color: #F1F4ED;
-	text-shadow: 0 0 10px #F1F4ED;
-	background-color: #353E4D;
+	color: #CED3CD;
+	/*text-shadow: 0 0 10px #F1F4ED;*/
+	background-color: #3B3034;
 }
 
-.darkmode a, 
+.darkmode header {
+	background-color: #3B3034; 
+	background-repeat: no-repeat; 
+	background-blend-mode:soft-light;
+
+}
+
+.darkmode a,
 .darkmode a:visited {
-	color: #F1F4ED;
+	color: #CED3CD;
 	text-shadow: 0 0 10px #E6484F;
 }
 
 .darkmode a:hover {
-	color: #353E4D;
+	color: #FFFFFF;
+}
+
+.darkmode button {
+	color: #CED3CD;
+	text-shadow: 0 0 10px #E6484F;
+	cursor: url('https://pixels.crd.co/assets/images/gallery40/df058d7c.gif?v=9b219e01'), auto;
+}
+
+.darkmode button:hover {
+	color: #FFFFFF;
 }
 
 .hidden {
@@ -110,13 +131,15 @@ h4 {
 	font-size: 24px;
 	padding-bottom: 14px;
 }
+
 /*
 section h4 {
 	text-shadow: 0 0 20px #fff, 0 0 30px #e60073, 
 	0 0 40px #e60073, 0 0 50px #e60073;
 }*/
 
-p, li {
+p,
+li {
 	padding-bottom: 10px;
 }
 
@@ -128,11 +151,18 @@ ol {
 /* misc*/
 
 button {
+	transition: all 400ms ease;
 	border-radius: 10px;
 	background: none;
 	padding: 5px;
 	border: 0px;
-	text-shadow: 0 0 10px #F1F4ED;
+	color: #353E4D;
+	text-shadow: 0 0 10px #19B4AE;
+	cursor: url('https://pixels.crd.co/assets/images/gallery62/6735522f.png?v=9b219e01'), auto;
+}
+
+button:hover {
+	color: #F1F4ED
 }
 
 img {
@@ -142,7 +172,7 @@ img {
 
 a,
 a:visited {
-	transition: all 500ms ease;
+	transition: all 400ms ease;
 	color: #353E4D;
 	text-shadow: 0 0 10px #19B4AE;
 	cursor: url('https://pixels.crd.co/assets/images/gallery65/50418f3e.gif?v=9b219e01'), auto;
@@ -161,19 +191,22 @@ a:hover {
 
 
 /* adaptive */
-@media only screen and (max-device-width: 812px) { 
+@media only screen and (max-device-width: 812px) {
 	body {
-        padding: 10px;
-    }
+		padding: 10px;
+	}
+
 	h1 {
-        font-size: 40px;
-    }
+		font-size: 40px;
+	}
+
 	h2 {
-        font-size: 24px;
-    }
+		font-size: 24px;
+	}
+
 	h4 {
-        font-size: 24px;
-    }
+		font-size: 24px;
+	}
 }
 
 
