@@ -45,6 +45,15 @@ section {
 	justify-content: space-between;
 }
 
+#flexy {
+    display: flex;
+    justify-content: center;
+}
+
+#air {
+    padding-left: 50px;
+}
+
 /* text */
 h1 {
     font-size: x-large;

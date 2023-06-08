@@ -6,6 +6,8 @@ function getWeather() {
   let apiKey = "277e38acc52ab5acfa722a76558e01b3";
   let time = document.getElementById("time");
   let fit = document.getElementById("fitcast");
+  let air = document.getElementById("air");
+  
 
   location.innerHTML = "Locating...";
   navigator.geolocation.getCurrentPosition(success, error);
@@ -24,11 +26,28 @@ function getWeather() {
       apiKey +
       "&units=imperial";
 
+    let url2 = "http://api.openweathermap.org/data/2.5/air_pollution?lat=" +
+      latitude + "&lon=" + longitude + "&appid=" + apiKey;
+
+    var mask = false;
+    fetch(url2)
+      .then(response => response.json())
+      .then(data => {
+        let quality = data.list[0].main.aqi;
+        console.log(quality);
+        if (quality > 2) {
+          mask = true;
+        }
+        let l = [0, "good", "fair", "moderate", "poor", "very poor"];
+        let qualityDesc = l[quality];
+        air.innerHTML = qualityDesc + " air quality";
+      });
+
     fetch(url)
       .then(response => response.json())
       .then(data => {
         console.log(data);
-
+        console.log(mask);
         let date = new Date(data.dt * 1000);
         let tempTime = date.toLocaleTimeString();
         let len = tempTime.length;
@@ -48,7 +67,6 @@ function getWeather() {
         temperature.innerHTML = "feels like " + temp + "° F";
 
         let weatherType = data.weather[0].main;
-        let weatherID = data.weather[0].id;
         let weather = "idk"
         if (weatherType == "Clear") { /* clear */
           weather = "clear";
@@ -67,12 +85,11 @@ function getWeather() {
         /* weather description to display = temperature segment + description */
         let feels = "good";
         let outfitDesc = "cute";
-        let outfitURL = "";
         if (temp > 80) { /* hot */
           feels = "hot+" + desc;
           if (weather == "clear") {
             outfitDesc = "sunnies+shorts"; /* sunnies+short+tshirt */
-          } else if (weather == "hazy") {
+          } else if (mask == true) {
             outfitDesc = "mask+shorts"; /* mask+short+tshirt */
           } else if (weather == "rainy") {
             outfitDesc = "umbrella+shorts"; /* umbrella+short+tshirt */
@@ -83,7 +100,7 @@ function getWeather() {
           feels = "warm+" + desc;
           if (weather == "clear") {
             outfitDesc = "sunnies+tshirt"; /* sunnies+pants+tshirt */
-          } else if (weather == "hazy") {
+          } else if (mask == true) {
             outfitDesc = "mask+tshirt"; /* mask+pants+tshirt */
           } else if (weather == "rainy") {
             outfitDesc = "umbrella+tshirt"; /* umbrella+pants+tshirt */
@@ -92,7 +109,7 @@ function getWeather() {
           }
         } else if (temp > 45) { /* cool */
           feels = "cool+" + desc;
-          if (weather == "hazy") {
+          if (mask == true) {
             outfitDesc = "mask+hoodie"; /* mask+pants+hoodie */
           } else if (weather == "rainy") {
             outfitDesc = "umbrella+hoodie"; /* umbrella+pants+hoodie */
@@ -103,7 +120,7 @@ function getWeather() {
           feels = "cold+" + desc;
           if (weather == "snowy") {
             outfitDesc = "knits+jacket"; /* hat+puffer+boots */
-          } else if (weather == "hazy") {
+          } else if (mask == true) {
             outfitDesc = "mask+jacket"; /* mask+pants+jacket */
           } else if (weather == "rainy") {
             outfitDesc = "umbrella+jacket"; /* umbrella+pants+jacket */
