@@ -26,7 +26,7 @@ function getWeather() {
       apiKey +
       "&units=imperial";
 
-    let url2 = "http://api.openweathermap.org/data/2.5/air_pollution?lat=" +
+    let url2 = "https://api.openweathermap.org/data/2.5/air_pollution?lat=" +
       latitude + "&lon=" + longitude + "&appid=" + apiKey;
 
     var mask = false;
