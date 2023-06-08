@@ -1,0 +1,68 @@
+@media (max-width: 600px) {
+  /* CSS rules for screens smaller than 600px */
+}
+
+/* divs */
+
+header {
+  padding: 10px;
+}
+
+body {
+  font-family: 'Ysabeau', sans-serif;
+  margin: 10px;
+  font-size: 16px;
+  padding-top: 6px;
+  justify-content: left;
+  padding-left: 40px;
+  color: black;
+  text-shadow: 2px 2px 5px pink;
+}
+
+section {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  padding-top: 200px;
+  text-align: center;
+}
+
+/* text */
+
+h1 {
+  font-family: 'Ysabeau', sans-serif;
+  font-size: 24px;
+}
+
+/* elements */
+
+button {
+  border-width: 0px;
+  background-color: white;
+}
+
+img {
+  height: 300px;
+}
+
+#advice {
+  font-family: 'Courier New', Courier, monospace;
+  width: 300px;
+  font-size: small;
+  position: relative;
+  top: -250px;
+  left: 219px;
+  rotate: -18deg;
+}
+
+/* randomizer stuff */
+
+.random {
+  transition: 500ms;
+}
+
+.hidden {
+  display: none;
+}
